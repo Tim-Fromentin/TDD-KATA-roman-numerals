@@ -20,6 +20,11 @@ public class RomanNumerals {
             remaining -= 90;
         }
 
+        while (remaining >= 50){
+            result.append("L");
+            remaining -= 50;
+        }
+
         while (remaining >= 40){
             result.append("XL");
             remaining -= 40;

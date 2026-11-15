@@ -55,7 +55,9 @@ public class RomanNumeralsTest {
     @Test
     void shouldUseSubtractiveNotation(){
         String resultForFour = romanNumerals.convert(4);
+        String resultForNine = romanNumerals.convert(9);
 
         assertThat(resultForFour).isEqualTo("IV");
+        assertThat(resultForNine).isEqualTo("IX");
     }
 }

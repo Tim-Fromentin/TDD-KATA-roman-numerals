@@ -87,4 +87,11 @@ public class RomanNumeralsTest {
         assertThat(resultForFiveHundred).isEqualTo("D");
         assertThat(resultForThousand).isEqualTo("M");
     }
+
+    @Test
+    void shouldConvertLargeNumbers(){
+        String resultForOneThousandNineHundredNinetyfour = romanNumerals.convert(1994);
+
+        assertThat(resultForOneThousandNineHundredNinetyfour).isEqualTo("MCMXCIV");
+    }
 }

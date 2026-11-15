@@ -7,7 +7,7 @@ public class RomanNumerals {
 
         if (remaining >= 5){
             result.append("V");
-            remaining = number - 5;
+            remaining -= 5;
         }
 
         for (int i = 1; i <= remaining; i++){

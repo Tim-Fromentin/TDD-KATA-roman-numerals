@@ -51,4 +51,11 @@ public class RomanNumeralsTest {
         assertThat(resultForThirty).isEqualTo("XXX");
         assertThat(resultForThirtyEight).isEqualTo("XXXVIII");
     }
+
+    @Test
+    void shouldUseSubtractiveNotation(){
+        String resultForFour = romanNumerals.convert(4);
+
+        assertThat(resultForFour).isEqualTo("IV");
+    }
 }

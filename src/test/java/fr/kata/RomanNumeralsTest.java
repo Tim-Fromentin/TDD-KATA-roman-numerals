@@ -2,7 +2,7 @@ package fr.kata;
 
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.*;
 
 public class RomanNumeralsTest {
 
@@ -97,5 +97,12 @@ public class RomanNumeralsTest {
         assertThat(resultForOneThousandNineHundredNinetyfour).isEqualTo("MCMXCIV");
         assertThat(resultForTwoThousandTwentysix).isEqualTo("MMXXVI");
         assertThat(resultForThreeThousandNineHundredNinetynine).isEqualTo("MMMCMXCIX");
+    }
+
+    @Test
+    void shouldRejectNumbersOutOfRange(){
+        assertThatThrownBy(() -> romanNumerals.convert(0))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Le nombre doit être entre 1 et 3999 (reçu : 0)");
     }
 }

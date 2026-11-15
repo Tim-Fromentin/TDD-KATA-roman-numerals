@@ -8,6 +8,7 @@ public class RomanNumerals {
 
     private static final List<RomanSymbol> ROMAN_SYMBOLS = List.of(
             new RomanSymbol(900, "CM"),
+            new RomanSymbol(500, "D"),
             new RomanSymbol(400, "CD"),
             new RomanSymbol(100, "C"),
             new RomanSymbol(90, "XC"),

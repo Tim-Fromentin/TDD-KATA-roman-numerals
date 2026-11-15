@@ -92,8 +92,10 @@ public class RomanNumeralsTest {
     void shouldConvertLargeNumbers(){
         String resultForOneThousandNineHundredNinetyfour = romanNumerals.convert(1994);
         String resultForTwoThousandTwentysix = romanNumerals.convert(2026);
+        String resultForThreeThousandNineHundredNinetynine = romanNumerals.convert(3999);
 
         assertThat(resultForOneThousandNineHundredNinetyfour).isEqualTo("MCMXCIV");
         assertThat(resultForTwoThousandTwentysix).isEqualTo("MMXXVI");
+        assertThat(resultForThreeThousandNineHundredNinetynine).isEqualTo("MMMCMXCIX");
     }
 }

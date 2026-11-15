@@ -25,12 +25,15 @@ public class RomanNumerals {
     private static final int MIN_VALUE = 1;
     private static final int MAX_VALUE = 3999;
 
+    private void validateRange(int number) {
+        if (number < MIN_VALUE || number > MAX_VALUE) {
+            throw new IllegalArgumentException(String.format("Le nombre doit être entre %d et %d (reçu : %d)", MIN_VALUE, MAX_VALUE, number));
+        }
+    }
 
     public String convert(int number) {
 
-        if (number < MIN_VALUE || number > MAX_VALUE){
-            throw new IllegalArgumentException(String.format("Le nombre doit être entre %d et %d (reçu : %d)",MIN_VALUE, MAX_VALUE, number));
-        }
+        validateRange(number);
 
         StringBuilder result = new StringBuilder();
         int remaining = number;

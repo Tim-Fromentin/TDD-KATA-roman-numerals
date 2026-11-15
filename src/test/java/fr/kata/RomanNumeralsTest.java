@@ -101,8 +101,14 @@ public class RomanNumeralsTest {
 
     @Test
     void shouldRejectNumbersOutOfRange(){
+
         assertThatThrownBy(() -> romanNumerals.convert(0))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("Le nombre doit être entre 1 et 3999 (reçu : 0)");
+
+        assertThatThrownBy(() -> romanNumerals.convert(-1))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Le nombre doit être entre 1 et 3999 (reçu : -1)");
+
     }
 }

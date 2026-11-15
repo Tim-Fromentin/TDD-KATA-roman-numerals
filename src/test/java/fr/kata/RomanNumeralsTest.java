@@ -40,7 +40,9 @@ public class RomanNumeralsTest {
     @Test
     void shouldConvertTens(){
         String resultForTen = romanNumerals.convert(10);
+        String resultForTwenty = romanNumerals.convert(20);
 
         assertThat(resultForTen).isEqualTo("X");
+        assertThat(resultForTwenty).isEqualTo("XX");
     }
 }

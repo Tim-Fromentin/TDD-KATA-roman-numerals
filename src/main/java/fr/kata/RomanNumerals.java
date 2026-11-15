@@ -5,6 +5,11 @@ public class RomanNumerals {
         StringBuilder result = new StringBuilder();
         int remaining = number;
 
+        while (remaining >= 40){
+            result.append("XL");
+            remaining -= 40;
+        }
+
         while (remaining >= 10){
             result.append("X");
             remaining -= 10;

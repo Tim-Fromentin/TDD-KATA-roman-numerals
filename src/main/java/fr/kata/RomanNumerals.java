@@ -23,6 +23,11 @@ public class RomanNumerals {
     );
 
     public String convert(int number) {
+
+        if (number == 0){
+            throw new IllegalArgumentException("Le nombre doit être entre 1 et 3999 (reçu : 0)");
+        }
+
         StringBuilder result = new StringBuilder();
         int remaining = number;
 

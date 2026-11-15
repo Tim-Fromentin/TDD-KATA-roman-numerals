@@ -40,9 +40,13 @@ public class RomanNumeralsTest {
     @Test
     void shouldConvertTens(){
         String resultForTen = romanNumerals.convert(10);
+        String resultForSixteen = romanNumerals.convert(16);
         String resultForTwenty = romanNumerals.convert(20);
+        String resultForThirty = romanNumerals.convert(30);
 
         assertThat(resultForTen).isEqualTo("X");
+        assertThat(resultForSixteen).isEqualTo("XVI");
         assertThat(resultForTwenty).isEqualTo("XX");
+        assertThat(resultForThirty).isEqualTo("XXX");
     }
 }

@@ -3,12 +3,14 @@ package fr.kata;
 public class RomanNumerals {
     public String convert(int number){
         StringBuilder result = new StringBuilder();
+        int remaining = number;
 
-        if (number == 5){
-            return "V";
+        if (remaining >= 5){
+            result.append("V");
+            remaining = number - 5;
         }
 
-        for (int i = 1; i <= number; i++){
+        for (int i = 1; i <= remaining; i++){
             result.append("I");
         }
 

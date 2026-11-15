@@ -76,11 +76,13 @@ public class RomanNumeralsTest {
         String resultForTen = romanNumerals.convert(10);
         String resultForFifty = romanNumerals.convert(50);
         String resultForOneHundred = romanNumerals.convert(100);
+        String resultForFiveHundred = romanNumerals.convert(500);
 
         assertThat(resultForOne).isEqualTo("I");
         assertThat(resultForTen).isEqualTo("X");
         assertThat(resultForFive).isEqualTo("V");
         assertThat(resultForFifty).isEqualTo("L");
         assertThat(resultForOneHundred).isEqualTo("C");
+        assertThat(resultForFiveHundred).isEqualTo("D");
     }
 }

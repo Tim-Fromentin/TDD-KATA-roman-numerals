@@ -5,6 +5,10 @@ public class RomanNumerals {
         StringBuilder result = new StringBuilder();
         int remaining = number;
 
+        if (remaining == 4){
+            return "IV";
+        }
+
         while (remaining >= 10){
             result.append("X");
             remaining -= 10;

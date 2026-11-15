@@ -6,13 +6,13 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class RomanNumeralsTest {
 
-    private final RomanNumerals romainNumerals = new RomanNumerals();
+    private final RomanNumerals romanNumerals = new RomanNumerals();
 
     @Test
     void shouldRepeatI_forOneToThree(){
-        String resultForOne = romainNumerals.convert(1);
-        String resultForTwo = romainNumerals.convert(2);
-        String resultForThree = romainNumerals.convert(3);
+        String resultForOne = romanNumerals.convert(1);
+        String resultForTwo = romanNumerals.convert(2);
+        String resultForThree = romanNumerals.convert(3);
 
         assertThat(resultForOne).isEqualTo("I");
         assertThat(resultForTwo).isEqualTo("II");
@@ -21,7 +21,7 @@ public class RomanNumeralsTest {
 
     @Test
     void shouldConvertFive(){
-        String resultForFive = romainNumerals.convert(5);
+        String resultForFive = romanNumerals.convert(5);
 
         assertThat(resultForFive).isEqualTo("V");
     }

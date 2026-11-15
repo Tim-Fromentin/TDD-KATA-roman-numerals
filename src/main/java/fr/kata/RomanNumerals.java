@@ -22,17 +22,14 @@ public class RomanNumerals {
             new RomanSymbol(1, "I")
     );
 
+    private static final int MIN_VALUE = 1;
+    private static final int MAX_VALUE = 3999;
+
+
     public String convert(int number) {
 
-        if (number == -1){
-            throw new IllegalArgumentException(String.format("Le nombre doit être entre 1 et 3999 (reçu : %s)", number));
-        }
-
-        if (number == 0){
-            throw new IllegalArgumentException(String.format("Le nombre doit être entre 1 et 3999 (reçu : %s)", number));
-        }
-        if (number > 3999){
-            throw new IllegalArgumentException(String.format("Le nombre doit être entre 1 et 3999 (reçu : %s)", number));
+        if (number < MIN_VALUE || number > MAX_VALUE){
+            throw new IllegalArgumentException(String.format("Le nombre doit être entre %d et %d (reçu : %d)",MIN_VALUE, MAX_VALUE, number));
         }
 
         StringBuilder result = new StringBuilder();

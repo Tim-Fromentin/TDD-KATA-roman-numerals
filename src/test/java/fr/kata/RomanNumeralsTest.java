@@ -30,8 +30,10 @@ public class RomanNumeralsTest {
     void shouldAddIAfterV(){
         String resultForSix = romanNumerals.convert(6);
         String resultForSeven = romanNumerals.convert(7);
+        String resultForEight = romanNumerals.convert(8);
 
         assertThat(resultForSix).isEqualTo("VI");
         assertThat(resultForSeven).isEqualTo("VII");
+        assertThat(resultForEight).isEqualTo("VIII");
     }
 }

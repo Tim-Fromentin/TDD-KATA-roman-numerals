@@ -68,4 +68,15 @@ public class RomanNumeralsTest {
         assertThat(resultForFourHundred).isEqualTo("CD");
         assertThat(resultForNineHundred).isEqualTo("CM");
     }
+
+    @Test
+    void shouldConvertBaseSymbols(){
+        String resultForOne = romanNumerals.convert(1);
+        String resultForFive = romanNumerals.convert(5);
+        String resultForTen = romanNumerals.convert(10);
+
+        assertThat(resultForOne).isEqualTo("I");
+        assertThat(resultForTen).isEqualTo("X");
+        assertThat(resultForFive).isEqualTo("V");
+    }
 }

@@ -29,7 +29,9 @@ public class RomanNumeralsTest {
     @Test
     void shouldAddIAfterV(){
         String resultForSix = romanNumerals.convert(6);
+        String resultForSeven = romanNumerals.convert(7);
 
         assertThat(resultForSix).isEqualTo("VI");
+        assertThat(resultForSeven).isEqualTo("VII");
     }
 }

@@ -24,6 +24,10 @@ public class RomanNumerals {
 
     public String convert(int number) {
 
+        if (number == -1){
+            throw new IllegalArgumentException(String.format("Le nombre doit être entre 1 et 3999 (reçu : %s)", number));
+        }
+
         if (number == 0){
             throw new IllegalArgumentException(String.format("Le nombre doit être entre 1 et 3999 (reçu : %s)", number));
         }

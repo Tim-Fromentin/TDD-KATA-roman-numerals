@@ -77,6 +77,7 @@ public class RomanNumeralsTest {
         String resultForFifty = romanNumerals.convert(50);
         String resultForOneHundred = romanNumerals.convert(100);
         String resultForFiveHundred = romanNumerals.convert(500);
+        String resultForThousand = romanNumerals.convert(1000);
 
         assertThat(resultForOne).isEqualTo("I");
         assertThat(resultForTen).isEqualTo("X");
@@ -84,5 +85,6 @@ public class RomanNumeralsTest {
         assertThat(resultForFifty).isEqualTo("L");
         assertThat(resultForOneHundred).isEqualTo("C");
         assertThat(resultForFiveHundred).isEqualTo("D");
+        assertThat(resultForThousand).isEqualTo("M");
     }
 }

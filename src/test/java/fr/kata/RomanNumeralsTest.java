@@ -43,10 +43,12 @@ public class RomanNumeralsTest {
         String resultForSixteen = romanNumerals.convert(16);
         String resultForTwenty = romanNumerals.convert(20);
         String resultForThirty = romanNumerals.convert(30);
+        String resultForThirtyEight = romanNumerals.convert(38);
 
         assertThat(resultForTen).isEqualTo("X");
         assertThat(resultForSixteen).isEqualTo("XVI");
         assertThat(resultForTwenty).isEqualTo("XX");
         assertThat(resultForThirty).isEqualTo("XXX");
+        assertThat(resultForThirtyEight).isEqualTo("XXXVIII");
     }
 }

@@ -75,10 +75,12 @@ public class RomanNumeralsTest {
         String resultForFive = romanNumerals.convert(5);
         String resultForTen = romanNumerals.convert(10);
         String resultForFifty = romanNumerals.convert(50);
+        String resultForOneHundred = romanNumerals.convert(100);
 
         assertThat(resultForOne).isEqualTo("I");
         assertThat(resultForTen).isEqualTo("X");
         assertThat(resultForFive).isEqualTo("V");
         assertThat(resultForFifty).isEqualTo("L");
+        assertThat(resultForOneHundred).isEqualTo("C");
     }
 }

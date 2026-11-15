@@ -5,27 +5,29 @@ public class RomanNumerals {
         StringBuilder result = new StringBuilder();
         int remaining = number;
 
-        if (remaining == 4){
-            return "IV";
-        }
-
-        if (remaining == 9){
-            return "IX";
-        }
-
         while (remaining >= 10){
             result.append("X");
             remaining -= 10;
         }
 
+        while (remaining >= 9){
+            result.append("IX");
+            remaining -= 9;
+        }
 
-        if (remaining >= 5){
+        while (remaining >= 5){
             result.append("V");
             remaining -= 5;
         }
 
-        for (int i = 1; i <= remaining; i++){
+        while (remaining >= 4){
+            result.append("IV");
+            remaining -= 4;
+        }
+
+        while (remaining >= 1){
             result.append("I");
+            remaining -= 1;
         }
 
         return result.toString();

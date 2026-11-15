@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class RomainNumeralsTest {
+public class RomanNumeralsTest {
 
-    private final RomainNumerals romainNumerals = new RomainNumerals();
+    private final RomanNumerals romainNumerals = new RomanNumerals();
 
     @Test
     void shouldRepeatI_forOneToThree(){

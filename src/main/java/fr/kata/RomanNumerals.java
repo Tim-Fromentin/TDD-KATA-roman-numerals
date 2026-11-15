@@ -7,6 +7,7 @@ import java.util.List;
 public class RomanNumerals {
 
     private static final List<RomanSymbol> ROMAN_SYMBOLS = List.of(
+            new RomanSymbol(1000, "M"),
             new RomanSymbol(900, "CM"),
             new RomanSymbol(500, "D"),
             new RomanSymbol(400, "CD"),

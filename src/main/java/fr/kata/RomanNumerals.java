@@ -9,6 +9,10 @@ public class RomanNumerals {
             return "IV";
         }
 
+        if (remaining == 9){
+            return "IX";
+        }
+
         while (remaining >= 10){
             result.append("X");
             remaining -= 10;

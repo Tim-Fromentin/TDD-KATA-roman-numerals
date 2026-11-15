@@ -59,11 +59,13 @@ public class RomanNumeralsTest {
         String resultForForty = romanNumerals.convert(40);
         String resultForNinety = romanNumerals.convert(90);
         String resultForFourHundred = romanNumerals.convert(400);
+        String resultForNineHundred = romanNumerals.convert(900);
 
         assertThat(resultForFour).isEqualTo("IV");
         assertThat(resultForNine).isEqualTo("IX");
         assertThat(resultForForty).isEqualTo("XL");
         assertThat(resultForNinety).isEqualTo("XC");
         assertThat(resultForFourHundred).isEqualTo("CD");
+        assertThat(resultForNineHundred).isEqualTo("CM");
     }
 }

@@ -36,4 +36,11 @@ public class RomanNumeralsTest {
         assertThat(resultForSeven).isEqualTo("VII");
         assertThat(resultForEight).isEqualTo("VIII");
     }
+
+    @Test
+    void shouldConvertTens(){
+        String resultForTen = romanNumerals.convert(10);
+
+        assertThat(resultForTen).isEqualTo("X");
+    }
 }

@@ -18,4 +18,11 @@ public class RomainNumeralsTest {
         assertThat(resultForTwo).isEqualTo("II");
         assertThat(resultForThree).isEqualTo("III");
     }
+
+    @Test
+    void shouldConvertFive(){
+        String resultForFive = romainNumerals.convert(5);
+
+        assertThat(resultForFive).isEqualTo("V");
+    }
 }

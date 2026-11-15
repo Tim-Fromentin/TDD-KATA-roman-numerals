@@ -25,4 +25,11 @@ public class RomanNumeralsTest {
 
         assertThat(resultForFive).isEqualTo("V");
     }
+
+    @Test
+    void shouldAddIAfterV(){
+        String resultForSix = romanNumerals.convert(6);
+
+        assertThat(resultForSix).isEqualTo("VI");
+    }
 }

@@ -1,10 +1,10 @@
 package fr.kata;
 
-import fr.kata.dto.RomanSymbol;
-
 import java.util.List;
 
 public class RomanNumerals {
+
+    private record RomanSymbol(int value, String symbol) {}
 
     private static final List<RomanSymbol> ROMAN_SYMBOLS = List.of(
             new RomanSymbol(1000, "M"),
